@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+lib-cov
+*.code-workspace
+
+# Debugging files
+.vscode/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Test directories
+__tests__/
+test/
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn integrity file
+.yarn-integrity
+
+# dotenv environment variable file
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
