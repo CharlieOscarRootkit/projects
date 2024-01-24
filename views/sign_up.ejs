@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <style>
+            body {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                position: relative;
+            }
+            fieldset{
+                display: flex;
+                width: 30vw;
+                align-self: center;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+            #form {
+                display: flex;
+                align-self: center;
+                flex-direction: column;
+                gap: 1em;
+                width: 25vw;
+            }
+            button{
+                width: 50%;
+                height: 30px;
+                font-weight: bold;
+                align-self: center;
+            }
+            span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body class="login-page">
+        <fieldset>
+            <legend>Business Registration form</legend>
+            <form method="post" id="form" action="/sign-up" target="_self">
+
+                <label for="businessName">Business Name <span>*</span></label>
+                <input type="text" name="business_name" placeholder="Enter your business name" id="businessName" required>
+            
+                <label for="email">Email<span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="example@site.com" required>
+            
+                <label for="businessType">Business Type or Industry<span>*</span></label>
+                <select name="business_type" id="businessType" required>
+                    <option value="" disabled selected>Select Business Type or Industry</option>
+                    <option value="technology">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+            
+                <label for="legalStructure">Legal Structure<span>*</span></label>
+                <select name="legal_structure" id="legalStructure" required>
+                    <option value="" disabled selected>Select Legal Structure</option>
+                    <option value="sole_proprietorship">Sole Proprietorship</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="corporation">Corporation</option>
+                </select>
+                
+            
+                <label for="password">Password<span>*</span></label>
+                <input type="password" name="password" placeholder="Enter your password" id="password" required>
+            
+                <button type="submit">REGISTER</button>
+            </form>
+            
+         </fieldset>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <%= title %> 
+        </title>
+        <style>
+            body {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                position: relative;
+            }
+            fieldset{
+                display: flex;
+                width: 30vw;
+                align-self: center;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+            #form {
+                display: flex;
+                align-self: center;
+                flex-direction: column;
+                gap: 1em;
+                width: 25vw;
+            }
+            button{
+                width: 50%;
+                height: 30px;
+                font-weight: bold;
+                align-self: center;
+            }
+        </style>
+    </head>
+    <body class="login-page">
+        <fieldset>
+            <legend>Login form</legend>
+            <form method="post" id="form" target="/sign-in">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@site.com">
+                
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="please your password" id="password">
+
+                <button type="submit">LOGIN</button>
+            </form>
+         </fieldset>
+    </body>
+</html>
